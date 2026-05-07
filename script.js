@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <i class="${iconClass}"></i>
                         <span>${file}</span>
                     </div>
-                    <a href="projects/${projectType}/${file}" class="download-icon" download title="تحميل">
+                    <a href="${file}" class="download-icon" download title="تحميل">
                         <i class="fas fa-download"></i>
                     </a>
                 `;
