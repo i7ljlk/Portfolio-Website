@@ -36,22 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Form Submission (Visual Feedback)
-    const form = document.querySelector('.contact-form');
-    if(form) {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = form.querySelector('button');
-            const originalText = btn.innerText;
-            btn.innerText = 'تم الإرسال بنجاح!';
-            btn.style.background = '#00ff88';
-            form.reset();
-            setTimeout(() => {
-                btn.innerText = originalText;
-                btn.style.background = '';
-            }, 3000);
-        });
-    }
+    // Form Submission will be handled natively by FormSubmit.co
+    // No AJAX needed here to ensure activation page and Captchas work.
 
     // Scroll Reveal Simulation
     const observerOptions = {
@@ -75,23 +61,28 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // App Slideshow Logic
-    const appSlideshow = document.getElementById('app-slideshow');
-    if (appSlideshow) {
-        const appCard = appSlideshow.closest('.project-card');
-        const images = JSON.parse(appCard.getAttribute('data-images') || '[]');
-        if (images.length > 0) {
-            let currentIndex = 0;
-            setInterval(() => {
-                appSlideshow.style.opacity = '0';
-                setTimeout(() => {
-                    currentIndex = (currentIndex + 1) % images.length;
-                    appSlideshow.src = images[currentIndex];
-                    appSlideshow.style.opacity = '1';
-                }, 500);
-            }, 3500); // Change image every 3.5 seconds
+    // Slideshow Logic for Projects
+    const setupSlideshow = (elementId) => {
+        const slideshow = document.getElementById(elementId);
+        if (slideshow) {
+            const card = slideshow.closest('.project-card');
+            const images = JSON.parse(card.getAttribute('data-images') || '[]');
+            if (images.length > 0) {
+                let currentIndex = 0;
+                setInterval(() => {
+                    slideshow.style.opacity = '0';
+                    setTimeout(() => {
+                        currentIndex = (currentIndex + 1) % images.length;
+                        slideshow.src = images[currentIndex];
+                        slideshow.style.opacity = '1';
+                    }, 500);
+                }, 3500); // Change image every 3.5 seconds
+            }
         }
-    }
+    };
+
+    setupSlideshow('app-slideshow');
+    setupSlideshow('houses-slideshow');
 
     // Modal Logic
     const modal = document.getElementById('project-modal');
