@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan Mundher Abdulwahid - Civil Engineer Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #2563eb;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --line-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.5;
+            color: var(--text-main);
+            background-color: #f8fafc;
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: -0.025em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-bottom: 2px solid var(--line-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .summary p {
+            font-size: 15px;
+            color: var(--text-main);
+        }
+
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 18px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--primary-color);
+        }
+
+        .item-date {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        .item-subtitle {
+            font-weight: 500;
+            font-size: 14px;
+            color: var(--accent-color);
+            margin-bottom: 6px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            font-size: 14px;
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 4px;
+            color: var(--text-main);
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .skill-group {
+            font-size: 14px;
+        }
+
+        .skill-group strong {
+            color: var(--primary-color);
+        }
+
+        .certifications-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+                width: 100%;
+                max-width: 100%;
+            }
+            .contact-info a {
+                text-decoration: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .resume-container {
+                padding: 20px;
+            }
+            .item-header {
+                flex-direction: column;
+            }
+            .skills-grid, .certifications-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <header>
+            <h1>Hassan Mundher Abdulwahid</h1>
+            <div class="contact-info">
+                <span>Basra, Iraq</span>
+                <span>|</span>
+                <span><a href="mailto:eng.hasanm@yahoo.com">eng.hasanm@yahoo.com</a></span>
+                <span>|</span>
+                <span>+964 783 895 3531</span>
+                <span>|</span>
+                <span><a href="https://www.linkedin.com/in/hasanmundher">linkedin.com/in/hasanmundher</a></span>
+            </div>
+        </header>
+
+        <section class="summary">
+            <h2>Professional Summary</h2>
+            <p>
+                Detail-oriented Junior Civil Engineer with a solid foundation in structural design, site supervision, and finishing works. 
+                Proficient in industry-standard software including STAAD.Pro, AutoCAD, and Revit. Demonstrated technical innovation by 
+                developing a custom Android application for complex engineering calculations. Committed to delivering high-quality 
+                structural solutions and ensuring project compliance with international safety and quality standards.
+            </p>
+        </section>
+
+        <section class="experience">
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">Summer Intern - Al-Farah Residential Complex</span>
+                    <span class="item-date">July 2025</span>
+                </div>
+                <div class="item-subtitle">Basra, Iraq</div>
+                <ul>
+                    <li>Supervised on-site civil and finishing works, ensuring strict adherence to architectural and structural drawings.</li>
+                    <li>Monitored construction progress for a large-scale residential project during a three-week intensive internship.</li>
+                    <li>Collaborated with senior engineers to resolve field discrepancies and maintain work quality.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">Summer Intern - Southern General Fertilizer Company</span>
+                    <span class="item-date">July 2025</span>
+                </div>
+                <div class="item-subtitle">Khor Al-Zubair, Basra</div>
+                <ul>
+                    <li>Gained practical exposure to industrial site activities and specialized construction processes within a major fertilizer facility.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">Site Engineer Trainee - Residential Projects</span>
+                    <span class="item-date">2023 – 2025</span>
+                </div>
+                <div class="item-subtitle">Basra, Iraq</div>
+                <ul>
+                    <li>Assisted in the supervision of multiple residential building projects from initial excavation to final finishing phases.</li>
+                    <li>Performed accurate site surveying and leveling using Auto Level instruments to ensure structural alignment.</li>
+                    <li>Prepared and updated work progress schedules and tracked material quantities for daily site operations.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="item-header">
+                    <span class="item-title">Bachelor of Science in Civil Engineering</span>
+                    <span class="item-date">Expected 2026</span>
+                </div>
+                <div class="item-subtitle">Shatt Al-Arab University, College of Engineering | Basra, Iraq</div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Key Projects</h2>
+            <div class="project-item">
+                <div class="item-header">
+                    <span class="item-title">Graduation Project: Multi-Story Steel Structure Building</span>
+                </div>
+                <ul>
+                    <li>Designed and analyzed a multi-story steel frame using structural engineering principles and STAAD.Pro software.</li>
+                    <li>Developed comprehensive architectural and structural drawings using AutoCAD, ensuring AISC code compliance.</li>
+                    <li>Conducted rigorous load calculations to optimize the structural system for safety and efficiency.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <div class="item-header">
+                    <span class="item-title">Personal Project: CivilEng - Engineering Calculation Application</span>
+                </div>
+                <ul>
+                    <li>Developed an Android application to streamline site and office calculations, including brick quantity, material estimation, and reinforcement steel (Foundations, Slabs, Columns).</li>
+                    <li>Integrated modules for finishing materials estimation, significantly reducing manual calculation errors.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group"><strong>Structural Analysis:</strong> STAAD.Pro, ETABS, SAP2000, SAFE</div>
+                <div class="skill-group"><strong>Drafting & BIM:</strong> AutoCAD (2D/3D), Revit Structure</div>
+                <div class="skill-group"><strong>Project Management:</strong> MS Project, Quantity Takeoff, Scheduling</div>
+                <div class="skill-group"><strong>Site Operations:</strong> Surveying (Auto Level), Quality Control (QC/QA)</div>
+                <div class="skill-group"><strong>Office Tools:</strong> Advanced Excel, MS Word, Technical Reporting</div>
+                <div class="skill-group"><strong>Languages:</strong> Arabic (Native), English (B2), Spanish (A1)</div>
+            </div>
+        </section>
+
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <div class="certifications-list">
+                <li>Health and Safety (OSHA) - Microtech</li>
+                <li>Civil Quality Control & Assurance - Microtech</li>
+                <li>ISO 9001:2015 Non-conformances Explained - Alison</li>
+                <li>Diploma in MS Project (Expert Level) - Alison</li>
+                <li>Introduction to Drilling (English Course)</li>
+                <li>Inventory Management - HP LIFE</li>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

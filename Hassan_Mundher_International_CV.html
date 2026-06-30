@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan Mundher - International Civil Engineer CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --accent-color: #004488;
+            --text-main: #333333;
+            --text-muted: #555555;
+            --line-color: #dddddd;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.5;
+            color: var(--text-main);
+            background-color: #f4f4f4;
+            padding: 40px 20px;
+        }
+
+        .cv-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+            border-top: 10px solid var(--primary-color);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--line-color);
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Libre+Baskerville', serif;
+            font-size: 32px;
+            color: var(--primary-color);
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--accent-color);
+            text-transform: uppercase;
+        }
+
+        .contact-info a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 4px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .summary p {
+            font-size: 14px;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 18px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+
+        .item-title {
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--primary-color);
+        }
+
+        .item-date {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--text-muted);
+        }
+
+        .item-subtitle {
+            font-weight: 600;
+            font-size: 13px;
+            color: var(--accent-color);
+            margin-bottom: 6px;
+            font-style: italic;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 13px;
+            margin-bottom: 4px;
+            color: var(--text-main);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .skill-group {
+            font-size: 13px;
+        }
+
+        .skill-group strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+            font-size: 11px;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .cv-container { box-shadow: none; padding: 30px; width: 100%; border-top: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <header>
+            <h1>Hassan Mundher</h1>
+            <div class="contact-info">
+                <span>BASRA, IRAQ</span>
+                <span>|</span>
+                <span>+964 783 895 3531</span>
+                <span>|</span>
+                <a href="mailto:eng.hasanm@yahoo.com">ENG.HASANM@YAHOO.COM</a>
+            </div>
+            <div class="contact-info" style="margin-top: 5px;">
+                <a href="https://civil-eng-pro.vercel.app/" target="_blank">PORTFOLIO: civil-eng-pro.vercel.app</a>
+                <span>|</span>
+                <a href="https://linkedin.com/in/hasanmundher" target="_blank">LINKEDIN: hasanmundher</a>
+            </div>
+        </header>
+
+        <section class="summary">
+            <h2>Professional Profile</h2>
+            <p>
+                Innovative Graduate Civil Engineer with a focus on Structural Analysis, Site Supervision, and BIM workflows. 
+                Proficient in utilizing advanced engineering software (STAAD.Pro, ETABS, Revit) to design and optimize 
+                complex structures. Proven track record in developing technical solutions for quantity takeoff and 
+                maintaining rigorous site safety standards. Committed to professional excellence and the application 
+                of international engineering codes (AISC, ACI).
+            </p>
+        </section>
+
+        <section class="experience">
+            <h2>Technical Experience</h2>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">SITE ENGINEER INTERN | AL-FARAH RESIDENTIAL COMPLEX</span>
+                    <span class="item-date">JULY 2025</span>
+                </div>
+                <div class="item-subtitle">BASRA, IRAQ</div>
+                <ul>
+                    <li>Supervised residential construction phases, ensuring strict adherence to structural blueprints and quality standards.</li>
+                    <li>Collaborated with senior engineers to oversee finishing works and technical site documentation.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">SITE ENGINEER TRAINEE | RESIDENTIAL PROJECTS</span>
+                    <span class="item-date">2023 – 2025</span>
+                </div>
+                <div class="item-subtitle">BASRA, IRAQ</div>
+                <ul>
+                    <li>Conducted site surveying and precision leveling using Auto Level instruments for foundation works.</li>
+                    <li>Managed daily site logs and material quantity estimation, optimizing resource management.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Academic Background</h2>
+            <div class="education-item">
+                <div class="item-header">
+                    <span class="item-title">B.SC. IN CIVIL ENGINEERING</span>
+                    <span class="item-date">EXPECTED 2026</span>
+                </div>
+                <div class="item-subtitle">SHATT AL-ARAB UNIVERSITY | BASRA, IRAQ</div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Key Projects & Innovation</h2>
+            <div class="project-item">
+                <div class="item-header">
+                    <span class="item-title">GRADUATION PROJECT: STEEL STRUCTURE DESIGN</span>
+                </div>
+                <ul>
+                    <li>Designed a multi-story steel structure using STAAD.Pro and AISC codes, producing comprehensive structural drawings.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <div class="item-header">
+                    <span class="item-title">APPLICATION DEVELOPMENT: CIVILENG</span>
+                </div>
+                <ul>
+                    <li>Developed an Android application to automate quantity takeoff calculations for engineering materials.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <strong>Structural Analysis</strong>
+                    STAAD.Pro, ETABS, SAP2000, SAFE
+                </div>
+                <div class="skill-group">
+                    <strong>BIM & Design</strong>
+                    AutoCAD (2D/3D), Revit Structure
+                </div>
+                <div class="skill-group">
+                    <strong>Management</strong>
+                    MS Project, Quantity Surveying, Scheduling
+                </div>
+                <div class="skill-group">
+                    <strong>Field Standards</strong>
+                    Auto Level Surveying, QC/QA, OSHA Safety
+                </div>
+            </div>
+        </section>
+
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <div class="skills-grid">
+                <div class="skill-group">OSHA Health & Safety (Microtech)</div>
+                <div class="skill-group">Civil Quality Control (QC/QA)</div>
+                <div class="skill-group">ISO 9001:2015 Compliance</div>
+                <div class="skill-group">Diploma in MS Project (Expert)</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
