@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupSlideshow('app-slideshow');
     setupSlideshow('houses-slideshow');
+    setupSlideshow('staad-slideshow');
 
     // Modal Logic
     const modal = document.getElementById('project-modal');
