@@ -26,7 +26,7 @@
             <li><a href="#contact">تواصل معي</a></li>
         </ul>
         <div class="nav-cta">
-            <a href="Hassan_Mundher.pdf" class="btn-primary" download>تحميل الـ CV</a>
+            <button id="cv-btn" class="btn-primary">تحميل الـ CV</button>
         </div>
     </nav>
 
@@ -134,9 +134,10 @@
             <div class="projects-grid">
                 <div class="project-card" data-project="steel_buildings"
                     data-files='["مخططات_الطابق_المتكرر.pdf", "مخطط_الطابق_الأرضي.pdf", "تحليل_إنشائي_STAAD_Pro.std"]'
+                    data-images='["s1.png", "s2.png", "s3.png", "s4.png", "s5.png", "s6.png", "s7.png", "s8.png", "s9.png"]'
                     data-desc="مشروع تصميم مبنى فولاذي مكون من أرضي و3 طوابق متكررة، يتضمن التحليل الإنشائي باستخدام STAAD.Pro والتحقق من الأحمال وفق الكود AISC والمخططات التفصيلية.">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80"
+                        <img src="s1.png"
                             alt="Steel Building">
                         <div class="overlay">
                             <span class="view-btn">عرض التفاصيل والملفات</span>
@@ -167,9 +168,10 @@
                 </div>
 
                 <div class="project-card" data-project="water_tanks" data-files='["مشروع_تصميم_معماري_متكامل.rvt"]'
+                    data-images='["r1.png"]'
                     data-desc="مشروع تصميم معماري متكامل باستخدام برنامج Revit، يركز على توزيع المساحات والجمالية المعمارية مع مراعاة المعايير الهندسية.">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
+                        <img src="r1.png"
                             alt="Architecture Project">
                         <div class="overlay">
                             <span class="view-btn">عرض التفاصيل والملفات</span>
@@ -316,6 +318,21 @@
                 <ul id="modal-file-list" class="file-list">
                     <!-- Files will be injected here -->
                 </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- CV Modal -->
+    <div id="cv-modal" class="modal">
+        <div class="modal-content cv-modal-content">
+            <span class="close-cv-modal close-modal" style="position: absolute; top: 15px; right: 20px; font-size: 28px; font-weight: bold; cursor: pointer; color: var(--text-color);">&times;</span>
+            <div id="cv-modal-body" style="text-align: center; padding: 2rem 0;">
+                <h2 style="margin-bottom: 1rem;">اختر لغة السيرة الذاتية</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-light);">يرجى تحديد لغة السيرة الذاتية (المتوافقة مع نظام ATS) التي ترغب بتحميلها:</p>
+                <div class="cv-download-options" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="Hassan_Mundher_CV_AR.pdf" class="btn-primary" download><i class="fas fa-file-pdf"></i> السيرة الذاتية (عربي)</a>
+                    <a href="Hassan_Munther_EN.pdf" class="btn-secondary" download><i class="fas fa-file-pdf"></i> English CV</a>
+                </div>
             </div>
         </div>
     </div>

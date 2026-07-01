@@ -158,4 +158,29 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = 'auto';
         }
     });
+
+    // CV Modal Logic
+    const cvBtn = document.getElementById('cv-btn');
+    const cvModal = document.getElementById('cv-modal');
+    const closeCvModal = document.querySelector('.close-cv-modal');
+
+    if (cvBtn && cvModal && closeCvModal) {
+        cvBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            cvModal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeCvModal.addEventListener('click', () => {
+            cvModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+        
+        window.addEventListener('click', (e) => {
+            if (e.target == cvModal) {
+                cvModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
 });
