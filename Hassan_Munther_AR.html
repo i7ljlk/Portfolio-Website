@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan Munther Abdul-Wahid - CV (Arabic)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: letter;
+            margin: 19.5mm;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Calibri', 'Segoe UI', 'Tajawal', Tahoma, Arial, sans-serif;
+            font-size: 11pt;
+            line-height: 1.42;
+            color: #000000;
+            background-color: #ffffff;
+            direction: rtl;
+            text-align: right;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .cv-container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        @media print {
+            .cv-container {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .page-break {
+                page-break-before: always;
+                break-before: page;
+            }
+        }
+
+        /* HEADER */
+        .cv-header {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .cv-name {
+            font-size: 21pt;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 3px;
+            line-height: 1.2;
+        }
+
+        .cv-title {
+            font-size: 11.5pt;
+            font-weight: 700;
+            color: #111111;
+            margin-bottom: 5px;
+        }
+
+        .cv-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6px;
+            font-size: 9.6pt;
+            color: #222222;
+            margin-bottom: 2px;
+        }
+
+        .cv-row span.sep {
+            color: #666666;
+            margin: 0 4px;
+        }
+
+        .cv-row a {
+            color: #0044cc;
+            text-decoration: underline;
+        }
+
+        /* SECTION TITLES */
+        .section-title {
+            font-size: 11.5pt;
+            font-weight: 700;
+            color: #000000;
+            margin-top: 13px;
+            margin-bottom: 3px;
+            letter-spacing: 0.2px;
+        }
+
+        .section-rule {
+            height: 1.2px;
+            background-color: #1a3a5c;
+            border: none;
+            margin-bottom: 7px;
+        }
+
+        /* BODY CONTENT */
+        .summary-p {
+            font-size: 10.5pt;
+            line-height: 1.46;
+            color: #111111;
+            text-align: justify;
+        }
+
+        .item-group {
+            margin-bottom: 7px;
+        }
+
+        .item-header {
+            font-size: 10.5pt;
+            margin-bottom: 2px;
+            line-height: 1.4;
+        }
+
+        .item-title {
+            font-weight: 700;
+            color: #000000;
+        }
+
+        .item-subtitle {
+            font-style: italic;
+            color: #222222;
+        }
+
+        .item-date {
+            font-weight: 600;
+            color: #111111;
+            white-space: nowrap;
+        }
+
+        /* BULLET LISTS */
+        ul.bullets {
+            margin: 0;
+            padding-right: 20px;
+            list-style-type: disc;
+        }
+
+        ul.bullets li {
+            font-size: 10.2pt;
+            line-height: 1.42;
+            color: #1a1a1a;
+            margin-bottom: 3px;
+            text-align: justify;
+        }
+
+        ul.bullets li strong {
+            font-weight: 700;
+            color: #000000;
+        }
+
+        .ltr {
+            direction: ltr;
+            display: inline-block;
+            unicode-bidi: embed;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- HEADER -->
+        <header class="cv-header">
+            <h1 class="cv-name">حسن منذر عبدالواحد</h1>
+            <div class="cv-title">مهندس مدني | مهندس مساعد، إشراف موقعي ومهندس مكتب فني</div>
+            <div class="cv-row">
+                <span>البصرة - خور الزبير، العراق</span>
+                <span class="sep">|</span>
+                <span>الهاتف: <span class="ltr">+964 783 895 3531</span></span>
+                <span class="sep">|</span>
+                <span>البريد: <span class="ltr">hasanmthr02@gmail.com</span></span>
+            </div>
+            <div class="cv-row">
+                <span>معرض الأعمال: <a href="https://hassanm.vercel.app" class="ltr">hassanm.vercel.app</a></span>
+                <span class="sep">|</span>
+                <span>لينكد إن: <a href="https://www.linkedin.com/in/hasanmundher" class="ltr">hasanmundher</a></span>
+            </div>
+        </header>
+
+        <!-- PROFESSIONAL SUMMARY -->
+        <section>
+            <div class="section-title">النبذة المهنية</div>
+            <div class="section-rule"></div>
+            <p class="summary-p">
+                مهندس مدني شغوف ومبتكر يمتلك أساساً متيناً في التصميم الإنشائي، والإشراف الموقعي، وأعمال الإنهاءات المدنية. ماهر في استخدام برامج التحليل والتصميم الإنشائي المعتمدة في المجال الهندسي بما في ذلك <span class="ltr">STAAD.Pro</span> و <span class="ltr">AutoCAD</span> و <span class="ltr">Revit</span> و <span class="ltr">ETABS</span> و <span class="ltr">SAFE</span>. يجمع بين الكفاءة الميدانية في المساحة وإدارة المواقع والمهارات البرمجية والرقمية المتخصصة، حيث قام بتطوير تطبيق أندرويد متكامل للحسابات الهندسية المدنية (<span class="ltr">CivilEng</span>) وبناء منصة ويب هندسية (<span class="ltr">Civil Eng Pro</span>). حاصل على شهادات معتمدة في السلامة والصحة المهنية (<span class="ltr">OSHA</span>)، ومراقبة وضمان الجودة (<span class="ltr">QA/QC</span>)، وإدارة المشاريع (<span class="ltr">MS Project</span>).
+            </p>
+        </section>
+
+        <!-- EDUCATION -->
+        <section>
+            <div class="section-title">التعليم</div>
+            <div class="section-rule"></div>
+            <div class="item-group">
+                <div class="item-header">
+                    <span class="item-title">بكالوريوس في الهندسة المدنية</span>
+                    <span> | </span>
+                    <span class="item-subtitle">جامعة شط العرب، العراق</span>
+                    <span class="item-date"> (<span class="ltr">2025 - 2026</span>)</span>
+                </div>
+                <ul class="bullets">
+                    <li><strong>مشروع التخرج:</strong> التحليل الإنشائي والتصميم الكامل لمبنى فولاذي متعدد الطوابق (<span class="ltr">G+3</span>) باستخدام برنامج <span class="ltr">STAAD.Pro</span>، مع تطبيق كودات ومعايير <span class="ltr">AISC</span> لمقاومة الرياح والزلازل والتحقق من السلامة الإنشائية.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- WORK & FIELD EXPERIENCE -->
+        <section>
+            <div class="section-title">الخبرة والعمل الميداني</div>
+            <div class="section-rule"></div>
+
+            <div class="item-group">
+                <div class="item-header">
+                    <span class="item-title">مهندس موقع مدني (متعاون ميداني)</span>
+                    <span> | </span>
+                    <span class="item-subtitle">خور الزبير، البصرة</span>
+                    <span class="item-date"> (<span class="ltr">2023 - 2026</span>)</span>
+                </div>
+                <ul class="bullets">
+                    <li>المشاركة في الإشراف على تنفيذ وإنشاء مبانٍ سكنية متعددة، ومتابعة أعمال صب الخرسانة وتوزيع حديد التسليح وأعمال الإنهاءات.</li>
+                    <li>تنفيذ أعمال الميزانية والمساحة الدقيقة باستخدام جهاز الميزان (<span class="ltr">Auto Level</span>) لضبط المناسيب والمحاور الإنشائية.</li>
+                    <li>متابعة وتحديث جداول تقدم العمل (<span class="ltr">Work Progress Schedules</span>) وتنسيق المهام اليومية مع الفنيين ومقاولي الباطن.</li>
+                </ul>
+            </div>
+
+            <div class="item-group">
+                <div class="item-header">
+                    <span class="item-title">مهندس متدرب - موقع إنشائي</span>
+                    <span> | </span>
+                    <span class="item-subtitle">مجمع الفرح السكني، البصرة</span>
+                    <span class="item-date"> (يوليو <span class="ltr">2025</span>)</span>
+                </div>
+                <ul class="bullets">
+                    <li>إتمام 3 أسابيع من التدريب الميداني المكثف في فحص الموقع، وضمان مطابقة التنفيذ للمخططات المعمارية والإنشائية.</li>
+                    <li>مراقبة جودة المواد الإنشائية وضمان الالتزام بمعايير السلامة المهنية في بيئة العمل.</li>
+                </ul>
+            </div>
+
+            <div class="item-group">
+                <div class="item-header">
+                    <span class="item-title">تدريب صيفي</span>
+                    <span> | </span>
+                    <span class="item-subtitle">الشركة العامة لصناعة الأسمدة</span>
+                    <span class="item-date"> (صيف <span class="ltr">2025</span>)</span>
+                </div>
+                <ul class="bullets">
+                    <li>الاطلاع على المنشآت والهياكل الفولاذية الصناعية الثقيلة، وإجراءات الصيانة الدورية المتخصصة للمنشآت، والامتثال لمعايير السلامة الصناعية.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ENGINEERING PROJECTS & DIGITAL INNOVATIONS -->
+        <section>
+            <div class="section-title">المشاريع الهندسية والابتكارات الرقمية</div>
+            <div class="section-rule"></div>
+
+            <div class="item-group">
+                <div class="item-header">
+                    <span class="item-title">تطبيق <span class="ltr">CivilEng</span> للهواتف الذكية (<span class="ltr">Android APK</span>)</span>
+                    <span> | </span>
+                    <span class="item-subtitle">مشروع برمجيات هندسية</span>
+                    <span class="item-date"> (<span class="ltr">2026</span>)</span>
+                </div>
+                <ul class="bullets">
+                    <li>تصميم وتطوير تطبيق أندرويد مستقل لتسهيل وتسريع العمليات الحسابية الميدانية اليومية للمهندسين المدنيين في الموقع.</li>
+                    <li>يحتوي على وحدات حسابية متقدمة لتقدير أوزان حديد التسليح، وحسابات التصميم الإنشائي للسلالم، وحصر كميات المواد الإنشائية.</li>
+                </ul>
+            </div>
+
+            <!-- PAGE BREAK - Exactly matches English CV structure -->
+            <div class="page-break" style="margin-top: 10px;"></div>
+
+            <div class="item-group" style="margin-top: 2px;">
+                <div class="item-header">
+                    <span class="item-title">منصة <span class="ltr">Civil Eng Pro</span> الرقمية</span>
+                    <span> | </span>
+                    <span class="item-subtitle">مشروع تطوير ويب</span>
+                    <span class="item-date"> (<span class="ltr">2026</span>)</span>
+                </div>
+                <ul class="bullets">
+                    <li>تصميم وإطلاق منصة ويب حديثة (<span class="ltr">civil-eng-pro.vercel.app</span>) لتكون مركزاً رقمياً يقدم أدوات وحلولاً برمجية هندسية.</li>
+                </ul>
+            </div>
+
+            <div class="item-group">
+                <div class="item-header">
+                    <span class="item-title">التصميم الإنشائي لمبنى فولاذي (<span class="ltr">G+3</span>)</span>
+                    <span> | </span>
+                    <span class="item-subtitle">مشروع هندسة إنشائية</span>
+                    <span class="item-date"> (<span class="ltr">2025 - 2026</span>)</span>
+                </div>
+                <ul class="bullets">
+                    <li>تنفيذ النمذجة ثلاثية الأبعاد والتحليل الإجهادي الكامل عبر برنامج <span class="ltr">STAAD.Pro</span>، وإعداد المخططات والرسومات التنفيذية بموجب كودات <span class="ltr">AISC</span> المعتمدة.</li>
+                </ul>
+            </div>
+
+            <div class="item-group">
+                <div class="item-header">
+                    <span class="item-title">مخططات معمارية وإنشائية لمبانٍ سكنية</span>
+                    <span> | </span>
+                    <span class="item-subtitle">مشاريع تصميم ورسم هندسي</span>
+                    <span class="item-date"> (متنوعة)</span>
+                </div>
+                <ul class="bullets">
+                    <li>إنتاج مخططات معمارية متكاملة وتفاصيل إنشائية لفلل سكنية حديثة باستخدام برنامجي <span class="ltr">AutoCAD</span> و <span class="ltr">Revit</span>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROFESSIONAL CERTIFICATIONS & TRAINING -->
+        <section>
+            <div class="section-title">الشهادات المهنية والتدريب</div>
+            <div class="section-rule"></div>
+            <ul class="bullets">
+                <li>شهادة الصحة والسلامة المهنية (<span class="ltr">OSHA</span>) - شركة مايكرو تكنك (<span class="ltr">MicroTechnic Company</span>)</li>
+                <li>شهادة مراقبة وضمان الجودة المدنية (<span class="ltr">QC/QA</span>) - شركة مايكرو تكنك (<span class="ltr">MicroTechnic Company</span>)</li>
+                <li>دبلوم إدارة المشاريع الهندسية باستخدام <span class="ltr">MS Project</span></li>
+                <li>شهادة إدارة المخزون والإجراءات التصحيحية وفق معيار <span class="ltr">ISO 9001</span></li>
+            </ul>
+        </section>
+
+        <!-- TECHNICAL & PROFESSIONAL SKILLS -->
+        <section>
+            <div class="section-title">المهارات التقنية والمهنية</div>
+            <div class="section-rule"></div>
+            <ul class="bullets">
+                <li><strong>البرامج الإنشائية والهندسية:</strong> <span class="ltr">STAAD.Pro, AutoCAD, ETABS & SAFE, SAP2000, Revit Structure.</span></li>
+                <li><strong>إدارة الموقع والأعمال الميدانية:</strong> قراءة المخططات الهندسية، المساحة بجهاز <span class="ltr">Auto Level</span>، متابعة الجداول الزمنية، مراقبة الجودة (<span class="ltr">QC/QA</span>)، والسلامة المهنية (<span class="ltr">OSHA</span>).</li>
+                <li><strong>إدارة المشاريع والبرمجيات:</strong> <span class="ltr">MS Project</span> و <span class="ltr">Microsoft Office</span>.</li>
+            </ul>
+        </section>
+
+        <!-- LANGUAGES -->
+        <section>
+            <div class="section-title">اللغات</div>
+            <div class="section-rule"></div>
+            <ul class="bullets">
+                <li><strong>العربية:</strong> اللغة الأم (إتقان تام)</li>
+                <li><strong>الإنجليزية:</strong> مستوى فوق المتوسط (<span class="ltr">B1 / B2</span>)</li>
+                <li><strong>الإسبانية:</strong> مستوى مبتدئ (<span class="ltr">A1 / A2</span>)</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
