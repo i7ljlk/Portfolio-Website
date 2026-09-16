@@ -1,35 +1,92 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Custom Cursor
+    // Custom Cursor (Only on desktop with fine mouse pointer)
     const cursor = document.querySelector('.custom-cursor');
+    const isTouchDevice = !window.matchMedia('(hover: hover) and (pointer: fine)').matches;
     
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-    });
-
-    // Cursor interaction with buttons
-    const links = document.querySelectorAll('a, button, .project-card');
-    links.forEach(link => {
-        link.addEventListener('mouseenter', () => {
-            cursor.style.transform = 'scale(2.5)';
-            cursor.style.background = 'rgba(0, 242, 255, 0.2)';
-            cursor.style.border = '1px solid var(--accent-color)';
+    if (cursor && !isTouchDevice) {
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
         });
-        link.addEventListener('mouseleave', () => {
-            cursor.style.transform = 'scale(1)';
-            cursor.style.background = 'var(--accent-color)';
-            cursor.style.border = 'none';
-        });
-    });
 
-    // Smooth Scrolling
+        // Cursor interaction with buttons
+        const links = document.querySelectorAll('a, button, .project-card, .menu-toggle');
+        links.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(2.5)';
+                cursor.style.background = 'rgba(0, 242, 255, 0.2)';
+                cursor.style.border = '1px solid var(--accent-color)';
+            });
+            link.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+                cursor.style.background = 'var(--accent-color)';
+                cursor.style.border = 'none';
+            });
+        });
+    } else if (cursor) {
+        cursor.style.display = 'none';
+    }
+
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const navOverlay = document.getElementById('nav-overlay');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    const toggleMenu = (open) => {
+        const isOpen = open !== undefined ? open : !navMenu.classList.contains('active');
+        navMenu.classList.toggle('active', isOpen);
+        if (navOverlay) navOverlay.classList.toggle('active', isOpen);
+        if (menuToggle) {
+            menuToggle.setAttribute('aria-expanded', isOpen);
+            const icon = menuToggle.querySelector('i');
+            if (icon) {
+                if (isOpen) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            }
+        }
+        document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+    };
+
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => toggleMenu());
+        if (navOverlay) {
+            navOverlay.addEventListener('click', () => toggleMenu(false));
+        }
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => toggleMenu(false));
+        });
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+                toggleMenu(false);
+            }
+        });
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 850 && navMenu.classList.contains('active')) {
+                toggleMenu(false);
+            }
+        });
+    }
+
+    // Smooth Scrolling with fixed navbar offset
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
             const targetId = this.getAttribute('href');
+            if (targetId === '#' || !targetId) return;
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
-                targetElement.scrollIntoView({
+                e.preventDefault();
+                const navHeight = document.querySelector('nav')?.offsetHeight || 70;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+
+                window.scrollTo({
+                    top: offsetPosition,
                     behavior: 'smooth'
                 });
             }
