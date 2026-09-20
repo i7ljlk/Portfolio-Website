@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hassan Munther Abdul-Wahid - CV (English)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         @page {
             size: letter;
-            margin: 19.5mm;
+            margin: 9mm 12mm 9mm 12mm;
         }
 
         * {
@@ -21,9 +21,9 @@
 
         body {
             font-family: 'Calibri', 'Segoe UI', 'Inter', Tahoma, Arial, sans-serif;
-            font-size: 11pt;
-            line-height: 1.42;
-            color: #000000;
+            font-size: 9.3pt;
+            line-height: 1.33;
+            color: #111111;
             background-color: #ffffff;
             direction: ltr;
             text-align: left;
@@ -42,31 +42,29 @@
                 margin: 0;
                 padding: 0;
             }
-            .page-break {
-                page-break-before: always;
-                break-before: page;
-            }
         }
 
         /* HEADER */
         .cv-header {
             text-align: center;
-            margin-bottom: 12px;
+            margin-bottom: 7px;
+            padding-bottom: 2px;
         }
 
         .cv-name {
-            font-size: 21pt;
-            font-weight: 700;
-            color: #000000;
-            margin-bottom: 3px;
-            line-height: 1.2;
+            font-size: 19pt;
+            font-weight: 800;
+            color: #0b1f3a;
+            margin-bottom: 2px;
+            line-height: 1.15;
+            letter-spacing: -0.2px;
         }
 
         .cv-title {
-            font-size: 11.5pt;
+            font-size: 10.3pt;
             font-weight: 700;
-            color: #111111;
-            margin-bottom: 5px;
+            color: #1a3a5c;
+            margin-bottom: 4px;
         }
 
         .cv-row {
@@ -74,56 +72,66 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            gap: 6px;
-            font-size: 9.6pt;
-            color: #222222;
-            margin-bottom: 2px;
+            gap: 5px;
+            font-size: 8.8pt;
+            color: #333333;
+            line-height: 1.3;
         }
 
         .cv-row span.sep {
-            color: #666666;
-            margin: 0 4px;
+            color: #777777;
+            margin: 0 3px;
         }
 
         .cv-row a {
-            color: #0044cc;
-            text-decoration: underline;
+            color: #0d47a1;
+            text-decoration: none;
+            font-weight: 600;
         }
 
         /* SECTION TITLES */
         .section-title {
-            font-size: 11.5pt;
-            font-weight: 700;
-            color: #000000;
-            margin-top: 13px;
-            margin-bottom: 3px;
-            letter-spacing: 0.2px;
+            font-size: 10.3pt;
+            font-weight: 800;
+            color: #0b1f3a;
+            margin-top: 6px;
+            margin-bottom: 2px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.1px;
             text-transform: uppercase;
         }
 
         .section-rule {
             height: 1.2px;
-            background-color: #1a3a5c;
+            background: linear-gradient(to right, #0b1f3a, #4a77a8);
             border: none;
-            margin-bottom: 7px;
+            margin-bottom: 4px;
         }
 
         /* BODY CONTENT */
         .summary-p {
-            font-size: 10.5pt;
-            line-height: 1.46;
-            color: #111111;
+            font-size: 9.1pt;
+            line-height: 1.35;
+            color: #222222;
             text-align: justify;
         }
 
         .item-group {
-            margin-bottom: 7px;
+            margin-bottom: 4px;
         }
 
         .item-header {
-            font-size: 10.5pt;
-            margin-bottom: 2px;
-            line-height: 1.4;
+            font-size: 9.3pt;
+            margin-bottom: 1px;
+            line-height: 1.3;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .item-main {
+            font-weight: 700;
         }
 
         .item-title {
@@ -133,33 +141,46 @@
 
         .item-subtitle {
             font-style: italic;
-            color: #222222;
+            font-weight: 500;
+            color: #333333;
         }
 
         .item-date {
             font-weight: 600;
-            color: #111111;
+            font-size: 8.6pt;
+            color: #444444;
             white-space: nowrap;
         }
 
         /* BULLET LISTS */
         ul.bullets {
             margin: 0;
-            padding-left: 20px;
+            padding-left: 17px;
             list-style-type: disc;
         }
 
         ul.bullets li {
-            font-size: 10.2pt;
-            line-height: 1.42;
-            color: #1a1a1a;
-            margin-bottom: 3px;
+            font-size: 8.9pt;
+            line-height: 1.32;
+            color: #222222;
+            margin-bottom: 1.5px;
             text-align: justify;
         }
 
         ul.bullets li strong {
             font-weight: 700;
-            color: #000000;
+            color: #0b1f3a;
+        }
+
+        .skill-line {
+            font-size: 8.9pt;
+            line-height: 1.32;
+            margin-bottom: 2px;
+        }
+
+        .skill-line strong {
+            color: #0b1f3a;
+            font-weight: 700;
         }
     </style>
 </head>
@@ -168,7 +189,7 @@
         <!-- HEADER -->
         <header class="cv-header">
             <h1 class="cv-name">Hassan Munther Abdul-Wahid</h1>
-            <div class="cv-title">Civil Engineer | Assistant Engineer, Site Supervision & Office Engineer</div>
+            <div class="cv-title">Civil Engineer | Site Supervision, Blueprint Auditing & Technical Office</div>
             <div class="cv-row">
                 <span>Basra - Khor Al-Zubair, Iraq</span>
                 <span class="sep">|</span>
@@ -179,7 +200,7 @@
             <div class="cv-row">
                 <span>Portfolio: <a href="https://civil-eng-pro.vercel.app">civil-eng-pro.vercel.app</a></span>
                 <span class="sep">|</span>
-                <span>LinkedIn: <a href="https://www.linkedin.com/in/hasanmundher">hasanmundher</a></span>
+                <span>LinkedIn: <a href="https://www.linkedin.com/in/hasanmundher">linkedin.com/in/hasanmundher</a></span>
             </div>
         </header>
 
@@ -188,7 +209,7 @@
             <div class="section-title">Professional Summary</div>
             <div class="section-rule"></div>
             <p class="summary-p">
-                Dedicated and innovative Civil Engineer with a solid foundation in structural design, site supervision, and civil construction. Proficient in industry-standard structural analysis and design tools including STAAD.Pro, AutoCAD, Revit, ETABS, and SAFE. Combines practical field surveying, optical level surveying, and site inspection expertise with specialized engineering software development, having developed an Android civil engineering calculation app (CivilEng) and the engineering web platform (Civil Eng Pro). Certified in OSHA safety, QA/QC management, and MS Project.
+                Dedicated Civil Engineer with a strong foundation in structural design, on-site supervision, and civil construction. Skilled in reading and auditing blueprints, precision leveling via Auto Level, and geotechnical soil testing. Proficient in engineering software (STAAD.Pro, AutoCAD, Revit, ETABS, SAFE). Combines field execution acumen with software development capabilities, having engineered the CivilEng Android application and the Civil Eng Pro web platform. Certified in OSHA safety, QA/QC management, and MS Project.
             </p>
         </section>
 
@@ -198,13 +219,15 @@
             <div class="section-rule"></div>
             <div class="item-group">
                 <div class="item-header">
-                    <span class="item-title">Bachelor of Science in Civil Engineering</span>
-                    <span> | </span>
-                    <span class="item-subtitle">Shatt Al-Arab University, Iraq</span>
-                    <span class="item-date"> (2025 - 2026)</span>
+                    <div class="item-main">
+                        <span class="item-title">Bachelor of Science in Civil Engineering</span>
+                        <span> | </span>
+                        <span class="item-subtitle">Shatt Al-Arab University, Iraq</span>
+                    </div>
+                    <span class="item-date">(2025 - 2026)</span>
                 </div>
                 <ul class="bullets">
-                    <li><strong>Graduation Project:</strong> Structural Analysis & Complete Design of a Multi-Story Steel Building (G+3) using STAAD.Pro, implementing AISC standards for wind, seismic, and structural integrity analysis.</li>
+                    <li><strong>Graduation Project:</strong> Comprehensive structural analysis and design of a multi-story steel building (G+3) using STAAD.Pro, compliant with AISC codes for gravity, wind, and seismic loads.</li>
                 </ul>
             </div>
         </section>
@@ -216,98 +239,78 @@
 
             <div class="item-group">
                 <div class="item-header">
-                    <span class="item-title">Civil Engineering Site Intern</span>
-                    <span> | </span>
-                    <span class="item-subtitle">Al-Farah Residential Complex, Basra</span>
-                    <span class="item-date"> (July 2025)</span>
+                    <div class="item-main">
+                        <span class="item-title">Civil Engineering Site Intern</span>
+                        <span> | </span>
+                        <span class="item-subtitle">Al-Farah Residential Complex, Basra</span>
+                    </div>
+                    <span class="item-date">(July 2025)</span>
                 </div>
                 <ul class="bullets">
-                    <li>Conducted field supervision across construction phases, reading and auditing architectural and structural blueprints to ensure precise on-site compliance.</li>
-                    <li>Operated Auto Level instruments to establish elevations, axis lines, and benchmark levels for structural works.</li>
+                    <li>Conducted on-site supervision across construction phases, auditing architectural and structural blueprints to verify compliance.</li>
+                    <li>Operated Auto Level surveying instruments to establish structural elevations, axis alignments, and precision benchmarks.</li>
                 </ul>
             </div>
 
             <div class="item-group">
                 <div class="item-header">
-                    <span class="item-title">Summer Intern</span>
-                    <span> | </span>
-                    <span class="item-subtitle">General Company for Fertilizer Industries</span>
-                    <span class="item-date"> (Summer 2025)</span>
+                    <div class="item-main">
+                        <span class="item-title">Engineering Summer Intern</span>
+                        <span> | </span>
+                        <span class="item-subtitle">General Company for Fertilizer Industries</span>
+                    </div>
+                    <span class="item-date">(Summer 2025)</span>
                 </div>
                 <ul class="bullets">
-                    <li>Read detailed engineering blueprints and conducted geotechnical soil investigations including laboratory soil tests and compaction evaluations.</li>
-                    <li>Gained exposure to heavy industrial steel structures and maintained strict compliance with occupational safety standards.</li>
+                    <li>Interpreted detailed blueprints, conducted geotechnical soil investigations, laboratory soil tests, and compaction evaluations.</li>
+                    <li>Inspected heavy industrial steel structures and strictly adhered to plant occupational health and safety regulations.</li>
                 </ul>
             </div>
         </section>
 
-        <!-- ENGINEERING PROJECTS & DIGITAL INNOVATIONS -->
+        <!-- KEY ENGINEERING PROJECTS -->
         <section>
-            <div class="section-title">Engineering Projects & Digital Innovations</div>
+            <div class="section-title">Key Projects & Software Innovations</div>
             <div class="section-rule"></div>
 
             <div class="item-group">
                 <div class="item-header">
-                    <span class="item-title">CivilEng Mobile Application (Android APK)</span>
-                    <span> | </span>
-                    <span class="item-subtitle">Engineering Software Project</span>
-                    <span class="item-date"> (2026)</span>
+                    <div class="item-main">
+                        <span class="item-title">CivilEng Mobile Application (Android APK)</span>
+                        <span> | </span>
+                        <span class="item-subtitle">Engineering Software Development</span>
+                    </div>
+                    <span class="item-date">(2026)</span>
                 </div>
                 <ul class="bullets">
-                    <li>Engineered and developed a standalone Android application designed to streamline daily on-site calculations for civil engineers.</li>
-                    <li>Features modules for rebar weight estimation, staircase structural design calculations, and material quantity surveying.</li>
-                </ul>
-            </div>
-
-            <!-- PAGE BREAK -->
-            <div class="page-break" style="margin-top: 10px;"></div>
-
-            <div class="item-group" style="margin-top: 2px;">
-                <div class="item-header">
-                    <span class="item-title">Civil Eng Pro Web Platform</span>
-                    <span> | </span>
-                    <span class="item-subtitle">Web Development Project</span>
-                    <span class="item-date"> (2026)</span>
-                </div>
-                <ul class="bullets">
-                    <li>Designed and launched a modern web platform (civil-eng-pro.vercel.app) serving as a digital hub for engineering tools and services.</li>
+                    <li>Engineered an Android app to streamline field calculations: rebar weight estimation, staircase design, and quantity takeoffs.</li>
                 </ul>
             </div>
 
             <div class="item-group">
                 <div class="item-header">
-                    <span class="item-title">G+3 Steel Building Structural Design</span>
-                    <span> | </span>
-                    <span class="item-subtitle">Structural Engineering Project</span>
-                    <span class="item-date"> (2025 - 2026)</span>
+                    <div class="item-main">
+                        <span class="item-title">Civil Eng Pro Platform & Residential Designs</span>
+                        <span> | </span>
+                        <span class="item-subtitle">Web & Structural Drafting</span>
+                    </div>
+                    <span class="item-date">(2025 - 2026)</span>
                 </div>
                 <ul class="bullets">
-                    <li>Performed complete 3D structural modeling and stress analysis in STAAD.Pro, preparing fabrication details and structural drawings according to AISC codes.</li>
-                </ul>
-            </div>
-
-            <div class="item-group">
-                <div class="item-header">
-                    <span class="item-title">Residential Architectural & Structural Plans</span>
-                    <span> | </span>
-                    <span class="item-subtitle">Design & Drafting Projects</span>
-                    <span class="item-date"> (Various)</span>
-                </div>
-                <ul class="bullets">
-                    <li>Produced comprehensive architectural layouts and structural details for modern residential villas using AutoCAD and Revit.</li>
+                    <li>Deployed civil-eng-pro.vercel.app and produced comprehensive architectural and structural layouts using AutoCAD & Revit.</li>
                 </ul>
             </div>
         </section>
 
-        <!-- PROFESSIONAL CERTIFICATIONS & TRAINING -->
+        <!-- CERTIFICATIONS & TRAINING -->
         <section>
-            <div class="section-title">Professional Certifications & Training</div>
+            <div class="section-title">Certifications & Training</div>
             <div class="section-rule"></div>
-            <ul class="bullets">
-                <li>Occupational Health & Safety (OSHA) Certificate - MicroTechnic Company</li>
-                <li>Civil Quality Control & Quality Assurance (QC/QA) Certificate - MicroTechnic Company</li>
+            <ul class="bullets" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1px 12px;">
+                <li>Occupational Health & Safety (OSHA) - MicroTechnic</li>
+                <li>Civil Quality Control & Assurance (QC/QA) - MicroTechnic</li>
                 <li>MS Project Engineering Management Diploma</li>
-                <li>ISO 9001 Inventory Management & Corrective Procedures Certificate</li>
+                <li>ISO 9001 Inventory Management & Corrective Actions</li>
             </ul>
         </section>
 
@@ -315,22 +318,23 @@
         <section>
             <div class="section-title">Technical & Professional Skills</div>
             <div class="section-rule"></div>
-            <ul class="bullets">
-                <li><strong>Structural Software:</strong> STAAD.Pro, AutoCAD, ETABS & SAFE, SAP2000 & Revit Structure.</li>
-                <li><strong>Field & Site Management:</strong> Blueprint Reading, Auto Level Surveying, Geotechnical Soil Testing, Schedule Tracking, QC/QA & OSHA Safety.</li>
-                <li><strong>Project Management & Software:</strong> MS Project & Microsoft Office.</li>
-            </ul>
+            <div class="skill-line">
+                <strong>Structural Software:</strong> STAAD.Pro, AutoCAD, ETABS & SAFE, SAP2000, Revit Structure, MS Project, Microsoft Office.
+            </div>
+            <div class="skill-line">
+                <strong>Field & Site Operations:</strong> Blueprint Reading & Auditing, Auto Level Surveying, Soil Testing, QC/QA Inspections, OSHA Safety.
+            </div>
         </section>
 
         <!-- LANGUAGES -->
         <section>
             <div class="section-title">Languages</div>
             <div class="section-rule"></div>
-            <ul class="bullets">
-                <li><strong>Arabic:</strong> Native Proficiency</li>
-                <li><strong>English:</strong> Upper-Intermediate (B1 / B2)</li>
-                <li><strong>Spanish:</strong> Elementary (A1 / A2)</li>
-            </ul>
+            <div class="skill-line" style="margin-bottom: 0;">
+                <strong>Arabic:</strong> Native Proficiency &nbsp;|&nbsp; 
+                <strong>English:</strong> Upper-Intermediate (B1 / B2) &nbsp;|&nbsp; 
+                <strong>Spanish:</strong> Elementary (A1 / A2)
+            </div>
         </section>
     </div>
 </body>
