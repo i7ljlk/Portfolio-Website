@@ -9,7 +9,7 @@ def create_en_cv():
     name = doc.add_heading('HASSAN MUNDHER ABDULWAHID', 0)
     name.alignment = WD_ALIGN_PARAGRAPH.CENTER
     
-    contact = doc.add_paragraph('Basra, Iraq | +964 783 895 3531 | hasanmthr02@gmail.com\nPortfolio: civil-eng-pro.vercel.app | LinkedIn: linkedin.com/in/hasanmundher')
+    contact = doc.add_paragraph('Basra, Iraq | +964 783 895 3531 | hasanmthr02@gmail.com\nPortfolio: hassanm.vercel.app | LinkedIn: linkedin.com/in/hasanmundher')
     contact.alignment = WD_ALIGN_PARAGRAPH.CENTER
     
     doc.add_heading('PROFESSIONAL PROFILE', level=1)
@@ -69,7 +69,7 @@ def create_ar_cv():
     name = doc.add_heading('حسن منذر عبدالواحد', 0)
     name.alignment = WD_ALIGN_PARAGRAPH.CENTER
     
-    contact = doc.add_paragraph('البصرة، العراق | +964 783 895 3531 | hasanmthr02@gmail.com\nمعرض الأعمال: civil-eng-pro.vercel.app | لينكد إن: linkedin.com/in/hasanmundher')
+    contact = doc.add_paragraph('البصرة، العراق | +964 783 895 3531 | hasanmthr02@gmail.com\nمعرض الأعمال: hassanm.vercel.app | لينكد إن: linkedin.com/in/hasanmundher')
     contact.alignment = WD_ALIGN_PARAGRAPH.CENTER
     
     doc.add_heading('النبذة المهنية', level=1)
